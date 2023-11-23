@@ -54,7 +54,7 @@
 
     <profiles>
         <profile>
-            <id>profile1</id>
+            <id>single</id>
             <build>
                 <plugins>
                     <plugin>
@@ -63,7 +63,7 @@
                         <version>3.2.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>path/to/testng-profile1.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/xmls/single.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -71,7 +71,7 @@
             </build>
         </profile>
         <profile>
-            <id>profile2</id>
+            <id>parallel</id>
             <build>
                 <plugins>
                     <plugin>
@@ -80,7 +80,7 @@
                         <version>3.2.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>path/to/testng-profile2.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/xmls/parallel.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
